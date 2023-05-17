@@ -12,7 +12,7 @@ export const sandboxApi = axios.create({
 // @ts-ignore
 // eslint-disable-next-line no-undef
 export const dndApi = axios.create({
-  baseURL: 'https://www.dnd5eapi.co/',
+  baseURL: 'https://www.dnd5eapi.co',
   timeout: 8000,
   withCredentials: false
 })

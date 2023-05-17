@@ -1,13 +1,8 @@
-import { AboutController } from "./controllers/AboutController.js";
-import { HomeController } from "./controllers/HomeController.js";
+import { SpellsController } from "./controllers/SpellsController.js";
 
 export const router = [
   {
     path: '',
-    controller: HomeController
-  },
-  {
-    path: '#/about',
-    controller: AboutController
+    controller: SpellsController
   }
 ]

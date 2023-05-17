@@ -10,6 +10,12 @@ class ObservableAppState extends EventEmitter {
   /** @type {import('./models/Value.js').Value[]} */
   values = []
   socketData = []
+  
+  spellDex = []
+  
+  /** @type {import('./models/ActiveSpell.js').ActiveSpell | null} */
+  activeSpell = null
+
 
   // Used to load initial data
   init() {
