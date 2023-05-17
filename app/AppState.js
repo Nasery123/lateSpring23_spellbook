@@ -13,8 +13,11 @@ class ObservableAppState extends EventEmitter {
   
   spellDex = []
   
-  /** @type {import('./models/ActiveSpell.js').ActiveSpell | null} */
+  /** @type {import('./models/Spell.js').Spell | null} */
   activeSpell = null
+  
+  /** @type {import('./models/Spell.js').Spell[]} */
+  userSpells = []
 
 
   // Used to load initial data

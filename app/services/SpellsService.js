@@ -1,5 +1,5 @@
 import { AppState } from "../AppState.js"
-import { ActiveSpell } from "../models/ActiveSpell.js"
+import { Spell } from "../models/Spell.js"
 import { dndApi } from "./AxiosService.js"
 
 class SpellsService {
@@ -10,7 +10,7 @@ class SpellsService {
 
     console.log('what is the res', res.data)
 
-    AppState.activeSpell = new ActiveSpell(res.data)
+    AppState.activeSpell = new Spell(res.data)
 
   }
 

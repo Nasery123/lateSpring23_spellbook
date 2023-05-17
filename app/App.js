@@ -1,9 +1,11 @@
 import { AppState } from './AppState.js';
 import { AuthController } from './controllers/AuthController.js';
+import { UserSpellsController } from './controllers/UserSpellsController.js';
 import { router } from './router.js';
 
 class App {
   AuthController = new AuthController()
+  UserSpellsController = new UserSpellsController()
 
   constructor() {
     window.addEventListener(
